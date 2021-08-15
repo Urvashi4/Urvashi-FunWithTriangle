@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Area</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="main3">
+        <button class="backBtn"><a href="index.html">Go Back</a></button>
+        <h1>Calculate Area</h1>
+        <p>Select an option below to calculate area of Triangle as per the data available</p>
+        <form class="radioClass">
+            <input type="radio" id="one">
+            <label for="one">If you have base and height length</label><br>
+            <input type="radio" id="two">
+            <label for="two"> If you have length of 3 sides</label><br>
+            <input type="radio" id="three">
+            <label for="three"> If you have length of 2 sides and included angle</label><br>
+        </form>
+        <section class="frst hideclass">
+            <form>
+                <label for="base">base=</label>
+                <input type="number" id="base" required />
+                <label for="height">height=</label>
+                <input type="number" id="height" required /><br>
+                <button class="submitBtn">Calculate</button>
+            </form>
+            <div class="output">Area= 1/2*base*height</div>
+        </section>
+
+        <section class="second hideclass">
+            <form>
+                <label for="side1">a=</label>
+                <input type="number" id="side1" required />
+                <label for="side2">b=</label>
+                <input type="number" id="side2" required />
+                <label for="side3">c=</label>
+                <input type="number" id="side3" required /><br>
+                <button class="submitBtn">Calculate</button>
+            </form>
+            <div class="output">Area= √s(s-a)(s-b)(s-c)</div>
+        </section>
+
+        <section class="third hideclass">
+            <form>
+                <label for="s1">b=</label>
+                <input type="number" id="s1" required />
+                <label for="s2">c=</label>
+                <input type="number" id="s2" required />
+                <label for="angle">∠A(degree)=</label>
+                <input type="number" id="angle" required /><br>
+                <button class="submitBtn">Calculate</button>
+            </form>
+            <div class="output">Area= 1/2*b*c*sin(A)</div>
+        </section>
+
+    </section>
+    <script src="area.js"></script>
+</body>
+
+</html>

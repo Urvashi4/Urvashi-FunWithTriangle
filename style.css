@@ -1,0 +1,48 @@
+.container {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.centreContainer {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2%;
+}
+
+h1 {
+    padding: 1%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.box {
+    border: 1px solid black;
+    text-align: center;
+    padding: 70px 0;
+    width: 100px;
+    height: 30px;
+}
+
+.output {
+    height: 20px;
+    width: 300px;
+    border: 1px solid black;
+}
+
+.message {
+    margin: 2%;
+}
+
+.hideclass {
+    display: none;
+}
