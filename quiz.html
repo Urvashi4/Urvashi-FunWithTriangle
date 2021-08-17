@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="main4">
+        <button class="backBtn"><a href="index.html">Go Back</a></button>
+        <h1>Quiz on triangles</h1>
+        <p>For each correct answer 1 point will get added to your score</p>
+        <form class="questionsForm">
+            <div class="questSet">
+                <p>1)The kind of triangle which has two equal sides is</p>
+                 <input type="radio" required id="opt1" name="ques1" value="exterior angle">
+                 <label for="html">exterior angle</label><br>
+                 <input type="radio" required id="opt2" name="ques1" value="equilateral triangle">
+                 <label for="opt2">equilateral triangle</label><br>
+                 <input type="radio" required id="opt3" name="ques1" value="isosceles triangle">
+                 <label for="opt3">isosceles triangle</label><br>
+                 <input type="radio" required id="opt4" name="ques1" value="scalene triangle">
+                 <label for="opt4">scalene triangle</label>
+            </div>
+            <div class="questSet">
+                <p>2)The right-angled triangle must have</p>
+                 <input type="radio" required id="opt1" name="ques2" value="four right angles">
+                 <label for="html">four right angles</label><br>
+                 <input type="radio" required id="opt2" name="ques2" value="three right angles">
+                 <label for="opt2">three right angles</label><br>
+                 <input type="radio" required id="opt3" name="ques2" value="one right angle">
+                 <label for="opt3">one right angle</label><br>
+                 <input type="radio" required id="opt4" name="ques2" value="two right angles">
+                 <label for="opt4">two right angles</label>
+            </div>
+            <div class="questSet">
+                <p>3)The triangles can be classified on the basis of</p>
+                 <input type="radio" required id="opt1" name="ques3" value="the number of equal sides">
+                 <label for="html">the number of equal sides</label><br>
+                 <input type="radio" required id="opt2" name="ques3" value="the types of angles">
+                 <label for="opt2">the types of angles</label><br>
+                 <input type="radio" required id="opt3" name="ques3" value="length of line segments">
+                 <label for="opt3">length of line segments</label><br>
+                 <input type="radio" required id="opt4" name="ques3" value="both a and b">
+                 <label for="opt4">both a and b</label>
+            </div>
+            <div class="questSet">
+                <p>4)The obtuse-angled triangle must have</p>
+                 <input type="radio" required id="opt1" name="ques4" value="four obtuse angles">
+                 <label for="html">four obtuse angles</label><br>
+                 <input type="radio" required id="opt2" name="ques4" value="three obtuse angles">
+                 <label for="opt2">three obtuse angles</label><br>
+                 <input type="radio" required id="opt3" name="ques4" value="two obtuse angles">
+                 <label for="opt3">two obtuse angles</label><br>
+                 <input type="radio" required id="opt4" name="ques4" value="one obtuse angle">
+                 <label for="opt4">one obtuse angle</label>
+            </div>
+            <div class="questSet">
+                <p>5)Which of the following triangles are always similar?</p>
+                 <input type="radio" required id="opt1" name="ques5" value="Equilateral triangle">
+                 <label for="html">Equilateral triangle</label><br>
+                 <input type="radio" required id="opt2" name="ques5" value="Isosceles triangle">
+                 <label for="opt2">Isosceles triangle</label>
+            </div><br>
+            <button class="subBtn">Submit</button>
+        </form>
+        <h2 class="output"></h2>
+    </section>
+    <script src="quiz.js"></script>
+</body>
+
+</html>

@@ -14,13 +14,19 @@ function refreshResult() {
     output.innerText = "";
 }
 
-document.querySelector('.submitBtn2').addEventListener("click", (e) => {
-    e.preventDefault();
+function displayMsg(text) {
+    output.innerText = text;
+}
+
+document.querySelector('.submitBtn2').addEventListener("click", () => {
     refreshResult();
     let s1 = Number(side1.value);
     let s2 = Number(side2.value);
-    let result = findHypotenuse(s1, s2);
-    output.innerText = result;
-
+    if (s1 == "" || s2 == "") {
+        displayMsg("Please enter both values to proceed");
+    } else {
+        let result = findHypotenuse(s1, s2);
+        displayMsg(result);
+    }
 });
 

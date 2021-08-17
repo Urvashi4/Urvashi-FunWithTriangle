@@ -7,18 +7,25 @@ function refreshOutput() {
     result.innerText = "";
 }
 
-document.querySelector('.submitBtn').addEventListener("click", (e) => {
-    e.preventDefault();
-    let sum = 0;
+function displayMsg(text) {
+    result.innerText = text;
+}
+
+document.querySelector('.submitBtn').addEventListener("click", () => {
     refreshOutput();
+    let sum = 0;
     let A1 = Number(angle1.value);
     let A2 = Number(angle2.value);
     let A3 = Number(angle3.value);
-    sum = A1 + A2 + A3;
-    if (sum === 180) {
-        result.innerText = "Yey! these angles can make a triangle";
+    if (A1 == "" || A2 == "" || A3 == "") {
+        displayMsg("Please enter all the three angles");
     } else {
-        result.innerText = "Oops! these angles can not make a triangle";
+        sum = A1 + A2 + A3;
+        if (sum === 180) {
+            displayMsg("Yey! these angles can make a triangle");
+        } else {
+            displayMsg("Oops! these angles can not make a triangle");
+        }
     }
 
 });
