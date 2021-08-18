@@ -1,13 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Teko:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
 * {
-    //font-family: 'Lobster', cursive;
     font-family: 'Pangolin', cursive;
 }
 
 :root{
     --primary-color: #7FC8A9;
-    --secondary-color: #3B82F6;
     --focus-color: yellowgreen;
 }
 
